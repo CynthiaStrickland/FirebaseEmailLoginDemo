@@ -31,13 +31,14 @@ class LoginViewController: UIViewController {
                 FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
                     
                     if user != nil {
-                        //sign in successful
+                        self.performSegue(withIdentifier: "mainviewcontroller", sender: self)
                         
                     } else {
                         if let myError = error?.localizedDescription {
                             print(myError)
                         } else {
                             let alert = UIAlertController(title: "Error", message: "Please enter a valid email address and/or password", preferredStyle: .actionSheet)
+                            self.present(alert, animated: true, completion:nil)
                             alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
                                 // perhaps use action.title here
                             })
@@ -47,7 +48,7 @@ class LoginViewController: UIViewController {
             } else {
                 FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
                     if user != nil {
-                        //successfully signed up
+                        self.performSegue(withIdentifier: "mainviewcontroller", sender: self)
                     } else {
                         //Display erro
                     }

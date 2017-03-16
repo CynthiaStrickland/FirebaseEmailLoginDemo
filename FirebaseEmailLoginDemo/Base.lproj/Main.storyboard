@@ -79,11 +79,55 @@
                         <outlet property="loginRegisterControl" destination="iDF-gk-PfY" id="eR9-yY-vfP"/>
                         <outlet property="passwordLabel" destination="mTE-GA-BhB" id="DTe-ow-P86"/>
                         <outlet property="passwordTextField" destination="Sq7-H6-WHZ" id="31u-mo-YaK"/>
+                        <segue destination="k42-4n-wVc" kind="show" identifier="mainviewcontroller" id="ls4-rF-o4e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-873" y="-98"/>
+            <point key="canvasLocation" x="-834" y="-99"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="fEI-n5-vjp">
+            <objects>
+                <viewController id="k42-4n-wVc" customClass="MainViewController" customModule="FirebaseEmailLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dVJ-SG-zKl"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nna-Dr-qJt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xtz-nY-t8F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Raven.png" translatesAutoresizingMaskIntoConstraints="NO" id="gdI-jd-0dz">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxq-pF-aOs">
+                                <rect key="frame" x="262" y="42" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="k42-4n-wVc" eventType="touchUpInside" id="4HC-Nk-juT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="logout" id="9wc-7g-vdd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jfo-dV-zCq"/>
+                    <connections>
+                        <outlet property="logout" destination="xxq-pF-aOs" id="DOi-KI-5v8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d02-Ya-LXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-135.19999999999999" y="-99.400299850074973"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Raven.png" width="232" height="237"/>
+    </resources>
 </document>
