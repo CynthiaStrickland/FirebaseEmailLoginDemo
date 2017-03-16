@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		30B3D4042E890E35B253D391 /* Pods_FirebaseEmailLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B88A0D7FDB839BF8F94A36 /* Pods_FirebaseEmailLoginDemo.framework */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
-		81F9119D1E7A108D0024CB4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* ViewController.swift */; };
+		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
 		81F911A21E7A108D0024CB4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F911A11E7A108D0024CB4D /* Assets.xcassets */; };
 		81F911A51E7A108D0024CB4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F911A31E7A108D0024CB4D /* LaunchScreen.storyboard */; };
 		81F911B01E7A108D0024CB4D /* FirebaseEmailLoginDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F911AF1E7A108D0024CB4D /* FirebaseEmailLoginDemoTests.swift */; };
 		81F911BB1E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F911BA1E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests.swift */; };
-		81F911C91E7A11B00024CB4D /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F911C81E7A11B00024CB4D /* GoogleService-Info (1).plist */; };
+		81F911C91E7A11B00024CB4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81F911C81E7A11B00024CB4D /* GoogleService-Info.plist */; };
+		81F911D01E7B37410024CB4D /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F911CF1E7B37410024CB4D /* AdSupport.framework */; };
 		959CFF81CC5942BED919A6B4 /* Pods_FirebaseEmailLoginDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D2CF635DAD0CCB07E67985 /* Pods_FirebaseEmailLoginDemoUITests.framework */; };
 		BB521911E90470EB55DB5EB8 /* Pods_FirebaseEmailLoginDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C918E1862999BF49B34ED9B4 /* Pods_FirebaseEmailLoginDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -45,8 +46,8 @@
 		58E1B2BA0B44B57AD60B42D6 /* Pods-FirebaseEmailLoginDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoTests/Pods-FirebaseEmailLoginDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		60DC1837D0971D3769DFFB7C /* Pods-FirebaseEmailLoginDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoTests/Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81F9119C1E7A108D0024CB4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
+		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		81F9119F1E7A108D0024CB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81F911A11E7A108D0024CB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F911A41E7A108D0024CB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,7 +58,8 @@
 		81F911B61E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseEmailLoginDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F911BA1E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseEmailLoginDemoUITests.swift; sourceTree = "<group>"; };
 		81F911BC1E7A108D0024CB4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81F911C81E7A11B00024CB4D /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		81F911C81E7A11B00024CB4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81F911CF1E7B37410024CB4D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		8CF6814CBA8BB8641279A6C6 /* Pods-FirebaseEmailLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemo/Pods-FirebaseEmailLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		964F25A4FD6B97C81810D72C /* Pods-FirebaseEmailLoginDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoUITests/Pods-FirebaseEmailLoginDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C918E1862999BF49B34ED9B4 /* Pods_FirebaseEmailLoginDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseEmailLoginDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F911D01E7B37410024CB4D /* AdSupport.framework in Frameworks */,
 				30B3D4042E890E35B253D391 /* Pods_FirebaseEmailLoginDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +97,7 @@
 		81F9118E1E7A108D0024CB4D = {
 			isa = PBXGroup;
 			children = (
+				81F9119A1E7A108D0024CB4D /* AppDelegate.swift */,
 				81F911991E7A108D0024CB4D /* FirebaseEmailLoginDemo */,
 				81F911AE1E7A108D0024CB4D /* FirebaseEmailLoginDemoTests */,
 				81F911B91E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests */,
@@ -116,13 +120,11 @@
 		81F911991E7A108D0024CB4D /* FirebaseEmailLoginDemo */ = {
 			isa = PBXGroup;
 			children = (
-				81F9119A1E7A108D0024CB4D /* AppDelegate.swift */,
-				81F9119C1E7A108D0024CB4D /* ViewController.swift */,
-				81F9119E1E7A108D0024CB4D /* Main.storyboard */,
-				81F911A11E7A108D0024CB4D /* Assets.xcassets */,
-				81F911A31E7A108D0024CB4D /* LaunchScreen.storyboard */,
-				81F911C81E7A11B00024CB4D /* GoogleService-Info (1).plist */,
-				81F911A61E7A108D0024CB4D /* Info.plist */,
+				81F911CA1E7B33970024CB4D /* CONTROLLER */,
+				81F911CB1E7B339F0024CB4D /* VIEW */,
+				81F911CC1E7B33A60024CB4D /* DATA */,
+				81F911CE1E7B33B60024CB4D /* SUPPORT */,
+				81F911CD1E7B33AD0024CB4D /* IMAGES */,
 			);
 			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
@@ -145,9 +147,51 @@
 			path = FirebaseEmailLoginDemoUITests;
 			sourceTree = "<group>";
 		};
+		81F911CA1E7B33970024CB4D /* CONTROLLER */ = {
+			isa = PBXGroup;
+			children = (
+				81F9119C1E7A108D0024CB4D /* LoginViewController.swift */,
+			);
+			name = CONTROLLER;
+			sourceTree = "<group>";
+		};
+		81F911CB1E7B339F0024CB4D /* VIEW */ = {
+			isa = PBXGroup;
+			children = (
+				81F9119E1E7A108D0024CB4D /* Main.storyboard */,
+				81F911A31E7A108D0024CB4D /* LaunchScreen.storyboard */,
+			);
+			name = VIEW;
+			sourceTree = "<group>";
+		};
+		81F911CC1E7B33A60024CB4D /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DATA;
+			sourceTree = "<group>";
+		};
+		81F911CD1E7B33AD0024CB4D /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				81F911A11E7A108D0024CB4D /* Assets.xcassets */,
+			);
+			name = IMAGES;
+			sourceTree = "<group>";
+		};
+		81F911CE1E7B33B60024CB4D /* SUPPORT */ = {
+			isa = PBXGroup;
+			children = (
+				81F911A61E7A108D0024CB4D /* Info.plist */,
+				81F911C81E7A11B00024CB4D /* GoogleService-Info.plist */,
+			);
+			name = SUPPORT;
+			sourceTree = "<group>";
+		};
 		99587B3CEA182BA510068AB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81F911CF1E7B37410024CB4D /* AdSupport.framework */,
 				49B88A0D7FDB839BF8F94A36 /* Pods_FirebaseEmailLoginDemo.framework */,
 				C918E1862999BF49B34ED9B4 /* Pods_FirebaseEmailLoginDemoTests.framework */,
 				29D2CF635DAD0CCB07E67985 /* Pods_FirebaseEmailLoginDemoUITests.framework */,
@@ -290,7 +334,7 @@
 				81F911A51E7A108D0024CB4D /* LaunchScreen.storyboard in Resources */,
 				81F911A21E7A108D0024CB4D /* Assets.xcassets in Resources */,
 				81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */,
-				81F911C91E7A11B00024CB4D /* GoogleService-Info (1).plist in Resources */,
+				81F911C91E7A11B00024CB4D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F9119D1E7A108D0024CB4D /* ViewController.swift in Sources */,
+				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -610,6 +654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LK662Y5U4K;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirebaseEmailLoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FenixDesignz.FirebaseEmailLoginDemo;
@@ -624,6 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LK662Y5U4K;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FirebaseEmailLoginDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FenixDesignz.FirebaseEmailLoginDemo;
@@ -713,6 +759,7 @@
 				81F911C11E7A108D0024CB4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F911C21E7A108D0024CB4D /* Build configuration list for PBXNativeTarget "FirebaseEmailLoginDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +768,7 @@
 				81F911C41E7A108D0024CB4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81F911C51E7A108D0024CB4D /* Build configuration list for PBXNativeTarget "FirebaseEmailLoginDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -729,6 +777,7 @@
 				81F911C71E7A108D0024CB4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
