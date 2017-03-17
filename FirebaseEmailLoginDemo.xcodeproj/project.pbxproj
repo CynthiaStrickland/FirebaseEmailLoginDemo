@@ -12,6 +12,9 @@
 		8158519A1E7B491300A98EB2 /* Raven.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851991E7B491300A98EB2 /* Raven.png */; };
 		8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8158519D1E7B741900A98EB2 /* backgroundImage.png */; };
 		815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */; };
+		815851A21E7B791E00A98EB2 /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A11E7B791E00A98EB2 /* home30.png */; };
+		815851A41E7B792700A98EB2 /* BC30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A31E7B792700A98EB2 /* BC30.png */; };
+		815851A61E7B793D00A98EB2 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A51E7B793D00A98EB2 /* me@2x.png */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -53,6 +56,9 @@
 		815851991E7B491300A98EB2 /* Raven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raven.png; sourceTree = "<group>"; };
 		8158519D1E7B741900A98EB2 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
 		8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		815851A11E7B791E00A98EB2 /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
+		815851A31E7B792700A98EB2 /* BC30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BC30.png; sourceTree = "<group>"; };
+		815851A51E7B793D00A98EB2 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +191,10 @@
 			isa = PBXGroup;
 			children = (
 				8158519D1E7B741900A98EB2 /* backgroundImage.png */,
+				815851A51E7B793D00A98EB2 /* me@2x.png */,
+				815851A31E7B792700A98EB2 /* BC30.png */,
 				815851991E7B491300A98EB2 /* Raven.png */,
+				815851A11E7B791E00A98EB2 /* home30.png */,
 				81F911A11E7A108D0024CB4D /* Assets.xcassets */,
 			);
 			name = IMAGES;
@@ -343,8 +352,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815851A61E7B793D00A98EB2 /* me@2x.png in Resources */,
 				8158519A1E7B491300A98EB2 /* Raven.png in Resources */,
+				815851A21E7B791E00A98EB2 /* home30.png in Resources */,
 				81F911A51E7A108D0024CB4D /* LaunchScreen.storyboard in Resources */,
+				815851A41E7B792700A98EB2 /* BC30.png in Resources */,
 				81F911A21E7A108D0024CB4D /* Assets.xcassets in Resources */,
 				8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */,
 				81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */,
