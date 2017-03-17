@@ -15,6 +15,7 @@
 		815851A21E7B791E00A98EB2 /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A11E7B791E00A98EB2 /* home30.png */; };
 		815851A41E7B792700A98EB2 /* BC30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A31E7B792700A98EB2 /* BC30.png */; };
 		815851A61E7B793D00A98EB2 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A51E7B793D00A98EB2 /* me@2x.png */; };
+		815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		815851A11E7B791E00A98EB2 /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
 		815851A31E7B792700A98EB2 /* BC30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BC30.png; sourceTree = "<group>"; };
 		815851A51E7B793D00A98EB2 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
+		815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				81F9119C1E7A108D0024CB4D /* LoginViewController.swift */,
 				8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */,
 				815851961E7B48B900A98EB2 /* MainViewController.swift */,
+				815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */,
 			);
 			name = CONTROLLER;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
+				815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */,
 				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
