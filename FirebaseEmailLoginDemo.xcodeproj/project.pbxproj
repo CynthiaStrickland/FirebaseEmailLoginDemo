@@ -10,6 +10,8 @@
 		30B3D4042E890E35B253D391 /* Pods_FirebaseEmailLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B88A0D7FDB839BF8F94A36 /* Pods_FirebaseEmailLoginDemo.framework */; };
 		815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851961E7B48B900A98EB2 /* MainViewController.swift */; };
 		8158519A1E7B491300A98EB2 /* Raven.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851991E7B491300A98EB2 /* Raven.png */; };
+		8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8158519D1E7B741900A98EB2 /* backgroundImage.png */; };
+		815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		60DC1837D0971D3769DFFB7C /* Pods-FirebaseEmailLoginDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoTests/Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		815851961E7B48B900A98EB2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		815851991E7B491300A98EB2 /* Raven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raven.png; sourceTree = "<group>"; };
+		8158519D1E7B741900A98EB2 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
+		8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				81F9119C1E7A108D0024CB4D /* LoginViewController.swift */,
+				8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */,
 				815851961E7B48B900A98EB2 /* MainViewController.swift */,
 			);
 			name = CONTROLLER;
@@ -179,6 +184,7 @@
 		81F911CD1E7B33AD0024CB4D /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				8158519D1E7B741900A98EB2 /* backgroundImage.png */,
 				815851991E7B491300A98EB2 /* Raven.png */,
 				81F911A11E7A108D0024CB4D /* Assets.xcassets */,
 			);
@@ -340,6 +346,7 @@
 				8158519A1E7B491300A98EB2 /* Raven.png in Resources */,
 				81F911A51E7A108D0024CB4D /* LaunchScreen.storyboard in Resources */,
 				81F911A21E7A108D0024CB4D /* Assets.xcassets in Resources */,
+				8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */,
 				81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */,
 				81F911C91E7A11B00024CB4D /* GoogleService-Info.plist in Resources */,
 			);
@@ -507,6 +514,7 @@
 				815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
+				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

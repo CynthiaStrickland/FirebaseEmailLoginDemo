@@ -18,9 +18,19 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var loginRegisterControl: UISegmentedControl!
     
+    
+    @IBAction func forgotPasswordPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "forgotPassword", sender: self)
+
+        
+    }
+    
+    let buttonBorder = UIColor.white.cgColor
+    let buttonColor = UIColor(red: 40/255, green: 141/255, blue: 255/255, alpha: 0.5).cgColor
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        customButtons()
     }
     
     
@@ -31,7 +41,7 @@ class LoginViewController: UIViewController {
                 FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
                     
                     if user != nil {
-                        self.performSegue(withIdentifier: "mainviewcontroller", sender: self)
+                        self.performSegue(withIdentifier: "tab", sender: self)
                         
                     } else {
                         if let myError = error?.localizedDescription {
@@ -48,7 +58,7 @@ class LoginViewController: UIViewController {
             } else {
                 FIRAuth.auth()?.createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
                     if user != nil {
-                        self.performSegue(withIdentifier: "mainviewcontroller", sender: self)
+                        self.performSegue(withIdentifier: "tab", sender: self)
                     } else {
                     }
                 })
@@ -66,6 +76,19 @@ class LoginViewController: UIViewController {
     func dismissKeyboard()
     {
         view.endEditing(true)
+    }
+    
+    func customButtons() {
+        loginButton.layer.borderColor = buttonBorder
+        loginButton.layer.backgroundColor  = buttonColor
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.cornerRadius = 10
+        
+        loginRegisterControl.layer.borderColor = buttonBorder
+        loginRegisterControl.layer.backgroundColor  = buttonColor
+        loginRegisterControl.layer.borderWidth = 1
+        loginRegisterControl.layer.cornerRadius = 10
+        
     }
 }
 
