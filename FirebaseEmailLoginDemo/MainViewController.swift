@@ -21,7 +21,6 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(FIRAuth.auth()?.currentUser?.email)
         
     }
 }

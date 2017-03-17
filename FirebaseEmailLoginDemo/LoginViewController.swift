@@ -50,7 +50,6 @@ class LoginViewController: UIViewController {
                     if user != nil {
                         self.performSegue(withIdentifier: "mainviewcontroller", sender: self)
                     } else {
-                        //Display erro
                     }
                 })
             }
