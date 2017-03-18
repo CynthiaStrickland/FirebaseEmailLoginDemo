@@ -21,6 +21,8 @@
 		815851B41E7CBE2100A98EB2 /* BookData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815851B31E7CBE2100A98EB2 /* BookData.plist */; };
 		815851B61E7CBEC600A98EB2 /* MobyDick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */; };
 		815851B81E7CC18800A98EB2 /* atlas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B71E7CC18800A98EB2 /* atlas.jpeg */; };
+		815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B91E7CC46C00A98EB2 /* BookCell.swift */; };
+		815851BE1E7CF84A00A98EB2 /* BookNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -71,6 +73,8 @@
 		815851B31E7CBE2100A98EB2 /* BookData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookData.plist; sourceTree = "<group>"; };
 		815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MobyDick.jpeg; sourceTree = "<group>"; };
 		815851B71E7CC18800A98EB2 /* atlas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atlas.jpeg; sourceTree = "<group>"; };
+		815851B91E7CC46C00A98EB2 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNotesController.swift; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 				815851961E7B48B900A98EB2 /* MainViewController.swift */,
 				815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */,
 				815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */,
+				815851B91E7CC46C00A98EB2 /* BookCell.swift */,
+				815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */,
 			);
 			name = CONTROLLER;
 			sourceTree = "<group>";
@@ -546,8 +552,10 @@
 			files = (
 				815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */,
 				815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */,
+				815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
+				815851BE1E7CF84A00A98EB2 /* BookNotesController.swift in Sources */,
 				815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */,
 				815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */,
 				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,

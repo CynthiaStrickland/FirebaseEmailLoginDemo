@@ -12,22 +12,17 @@ class BookData {
     
     var titleOfBook : String?
     var authorOfBook : String?
-    var bookImage: UIImageView?
     
-    init(titleOfBook:String, authorOfBook:String, bookImage:UIImageView) {
+    init(titleOfBook:String, authorOfBook:String) {
         self.titleOfBook = titleOfBook
         self.authorOfBook = authorOfBook
-        self.bookImage = bookImage
     }
     
     convenience init(dictionary:NSDictionary) {
         let titleOfBook = dictionary["titleOfBook"] as? String
         let authorOfBook = dictionary["authorOfBook"] as? String
-        let bookImage = dictionary["bookImage"] as? UIImageView
         
-        self.init(
-            
-            titleOfBook: titleOfBook!, authorOfBook: authorOfBook!, bookImage: bookImage!)
+        self.init(titleOfBook: titleOfBook!, authorOfBook: authorOfBook!)
     }
 
 class func loadBooks() -> [BookData] {

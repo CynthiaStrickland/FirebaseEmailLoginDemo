@@ -22,7 +22,6 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPasswordPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "forgotPassword", sender: self)
 
-        
     }
     
     let buttonBorder = UIColor.white.cgColor
@@ -31,6 +30,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customButtons()
+        
+        if FIRAuth.auth()?.currentUser != nil {
+            self.performSegue(withIdentifier: "tab", sender: self)
+        }
     }
     
     
