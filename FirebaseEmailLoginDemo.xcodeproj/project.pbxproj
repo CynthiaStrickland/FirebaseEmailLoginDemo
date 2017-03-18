@@ -16,6 +16,11 @@
 		815851A41E7B792700A98EB2 /* BC30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A31E7B792700A98EB2 /* BC30.png */; };
 		815851A61E7B793D00A98EB2 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A51E7B793D00A98EB2 /* me@2x.png */; };
 		815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */; };
+		815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */; };
+		815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B11E7CBB7E00A98EB2 /* BookData.swift */; };
+		815851B41E7CBE2100A98EB2 /* BookData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815851B31E7CBE2100A98EB2 /* BookData.plist */; };
+		815851B61E7CBEC600A98EB2 /* MobyDick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */; };
+		815851B81E7CC18800A98EB2 /* atlas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B71E7CC18800A98EB2 /* atlas.jpeg */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -61,6 +66,11 @@
 		815851A31E7B792700A98EB2 /* BC30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BC30.png; sourceTree = "<group>"; };
 		815851A51E7B793D00A98EB2 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
 		815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
+		815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
+		815851B11E7CBB7E00A98EB2 /* BookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
+		815851B31E7CBE2100A98EB2 /* BookData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookData.plist; sourceTree = "<group>"; };
+		815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MobyDick.jpeg; sourceTree = "<group>"; };
+		815851B71E7CC18800A98EB2 /* atlas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atlas.jpeg; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +180,7 @@
 				8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */,
 				815851961E7B48B900A98EB2 /* MainViewController.swift */,
 				815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */,
+				815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */,
 			);
 			name = CONTROLLER;
 			sourceTree = "<group>";
@@ -186,6 +197,8 @@
 		81F911CC1E7B33A60024CB4D /* DATA */ = {
 			isa = PBXGroup;
 			children = (
+				815851B11E7CBB7E00A98EB2 /* BookData.swift */,
+				815851B31E7CBE2100A98EB2 /* BookData.plist */,
 			);
 			name = DATA;
 			sourceTree = "<group>";
@@ -193,6 +206,8 @@
 		81F911CD1E7B33AD0024CB4D /* IMAGES */ = {
 			isa = PBXGroup;
 			children = (
+				815851B71E7CC18800A98EB2 /* atlas.jpeg */,
+				815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */,
 				8158519D1E7B741900A98EB2 /* backgroundImage.png */,
 				815851A51E7B793D00A98EB2 /* me@2x.png */,
 				815851A31E7B792700A98EB2 /* BC30.png */,
@@ -360,6 +375,9 @@
 				815851A21E7B791E00A98EB2 /* home30.png in Resources */,
 				81F911A51E7A108D0024CB4D /* LaunchScreen.storyboard in Resources */,
 				815851A41E7B792700A98EB2 /* BC30.png in Resources */,
+				815851B41E7CBE2100A98EB2 /* BookData.plist in Resources */,
+				815851B61E7CBEC600A98EB2 /* MobyDick.jpeg in Resources */,
+				815851B81E7CC18800A98EB2 /* atlas.jpeg in Resources */,
 				81F911A21E7A108D0024CB4D /* Assets.xcassets in Resources */,
 				8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */,
 				81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */,
@@ -526,9 +544,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */,
 				815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
+				815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */,
 				815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */,
 				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,
 			);
