@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  NotesViewController.swift
 //  FirebaseEmailLoginDemo
 //
 //  Created by Cynthia Strickland on 3/16/17.
@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class MainViewController: UIViewController {
+class NotesViewController: UIViewController {
     
     @IBOutlet weak var logout: UIButton!
     

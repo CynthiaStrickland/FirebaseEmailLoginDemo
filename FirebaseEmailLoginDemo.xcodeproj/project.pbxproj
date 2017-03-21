@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		30B3D4042E890E35B253D391 /* Pods_FirebaseEmailLoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B88A0D7FDB839BF8F94A36 /* Pods_FirebaseEmailLoginDemo.framework */; };
-		815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851961E7B48B900A98EB2 /* MainViewController.swift */; };
+		815851971E7B48B900A98EB2 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851961E7B48B900A98EB2 /* NotesViewController.swift */; };
 		8158519A1E7B491300A98EB2 /* Raven.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851991E7B491300A98EB2 /* Raven.png */; };
 		8158519E1E7B741900A98EB2 /* backgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8158519D1E7B741900A98EB2 /* backgroundImage.png */; };
 		815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */; };
 		815851A21E7B791E00A98EB2 /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A11E7B791E00A98EB2 /* home30.png */; };
 		815851A41E7B792700A98EB2 /* BC30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A31E7B792700A98EB2 /* BC30.png */; };
 		815851A61E7B793D00A98EB2 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A51E7B793D00A98EB2 /* me@2x.png */; };
-		815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */; };
 		815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */; };
 		815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B11E7CBB7E00A98EB2 /* BookData.swift */; };
 		815851B41E7CBE2100A98EB2 /* BookData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815851B31E7CBE2100A98EB2 /* BookData.plist */; };
 		815851B61E7CBEC600A98EB2 /* MobyDick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */; };
 		815851B81E7CC18800A98EB2 /* atlas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B71E7CC18800A98EB2 /* atlas.jpeg */; };
 		815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B91E7CC46C00A98EB2 /* BookCell.swift */; };
-		815851BE1E7CF84A00A98EB2 /* BookNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */; };
+		815851C01E7CFAC200A98EB2 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -60,24 +59,23 @@
 		49B88A0D7FDB839BF8F94A36 /* Pods_FirebaseEmailLoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseEmailLoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E1B2BA0B44B57AD60B42D6 /* Pods-FirebaseEmailLoginDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoTests/Pods-FirebaseEmailLoginDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		60DC1837D0971D3769DFFB7C /* Pods-FirebaseEmailLoginDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseEmailLoginDemoTests/Pods-FirebaseEmailLoginDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		815851961E7B48B900A98EB2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		815851961E7B48B900A98EB2 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		815851991E7B491300A98EB2 /* Raven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Raven.png; sourceTree = "<group>"; };
 		8158519D1E7B741900A98EB2 /* backgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundImage.png; sourceTree = "<group>"; };
-		8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PasswordResetViewController.swift; path = FirebaseEmailLoginDemo/PasswordResetViewController.swift; sourceTree = "<group>"; };
 		815851A11E7B791E00A98EB2 /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
 		815851A31E7B792700A98EB2 /* BC30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BC30.png; sourceTree = "<group>"; };
 		815851A51E7B793D00A98EB2 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
-		815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
 		815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		815851B11E7CBB7E00A98EB2 /* BookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		815851B31E7CBE2100A98EB2 /* BookData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookData.plist; sourceTree = "<group>"; };
 		815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MobyDick.jpeg; sourceTree = "<group>"; };
 		815851B71E7CC18800A98EB2 /* atlas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atlas.jpeg; sourceTree = "<group>"; };
 		815851B91E7CC46C00A98EB2 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNotesController.swift; sourceTree = "<group>"; };
+		815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
-		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = FirebaseEmailLoginDemo/LoginViewController.swift; sourceTree = "<group>"; };
 		81F9119F1E7A108D0024CB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81F911A11E7A108D0024CB4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F911A41E7A108D0024CB4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,11 +122,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815851C21E80978C00A98EB2 /* FIREBASE CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				81F9119C1E7A108D0024CB4D /* LoginViewController.swift */,
+				8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */,
+			);
+			name = "FIREBASE CONTROLLERS";
+			sourceTree = "<group>";
+		};
 		81F9118E1E7A108D0024CB4D = {
 			isa = PBXGroup;
 			children = (
 				81F9119A1E7A108D0024CB4D /* AppDelegate.swift */,
-				81F911991E7A108D0024CB4D /* FirebaseEmailLoginDemo */,
+				815851C21E80978C00A98EB2 /* FIREBASE CONTROLLERS */,
+				81F911CA1E7B33970024CB4D /* CONTROLLER */,
+				81F911CC1E7B33A60024CB4D /* DATA */,
+				81F911CB1E7B339F0024CB4D /* VIEW */,
+				81F911CE1E7B33B60024CB4D /* SUPPORT */,
+				81F911CD1E7B33AD0024CB4D /* IMAGES */,
 				81F911AE1E7A108D0024CB4D /* FirebaseEmailLoginDemoTests */,
 				81F911B91E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests */,
 				81F911981E7A108D0024CB4D /* Products */,
@@ -145,18 +157,6 @@
 				81F911B61E7A108D0024CB4D /* FirebaseEmailLoginDemoUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		81F911991E7A108D0024CB4D /* FirebaseEmailLoginDemo */ = {
-			isa = PBXGroup;
-			children = (
-				81F911CA1E7B33970024CB4D /* CONTROLLER */,
-				81F911CB1E7B339F0024CB4D /* VIEW */,
-				81F911CC1E7B33A60024CB4D /* DATA */,
-				81F911CE1E7B33B60024CB4D /* SUPPORT */,
-				81F911CD1E7B33AD0024CB4D /* IMAGES */,
-			);
-			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		81F911AE1E7A108D0024CB4D /* FirebaseEmailLoginDemoTests */ = {
@@ -180,15 +180,13 @@
 		81F911CA1E7B33970024CB4D /* CONTROLLER */ = {
 			isa = PBXGroup;
 			children = (
-				81F9119C1E7A108D0024CB4D /* LoginViewController.swift */,
-				8158519F1E7B746600A98EB2 /* PasswordResetViewController.swift */,
-				815851961E7B48B900A98EB2 /* MainViewController.swift */,
-				815851AD1E7C6A9A00A98EB2 /* MyHomeViewController.swift */,
+				815851961E7B48B900A98EB2 /* NotesViewController.swift */,
+				815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */,
 				815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */,
 				815851B91E7CC46C00A98EB2 /* BookCell.swift */,
-				815851BD1E7CF84A00A98EB2 /* BookNotesController.swift */,
 			);
 			name = CONTROLLER;
+			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		81F911CB1E7B339F0024CB4D /* VIEW */ = {
@@ -198,6 +196,7 @@
 				81F911A31E7A108D0024CB4D /* LaunchScreen.storyboard */,
 			);
 			name = VIEW;
+			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		81F911CC1E7B33A60024CB4D /* DATA */ = {
@@ -207,6 +206,7 @@
 				815851B31E7CBE2100A98EB2 /* BookData.plist */,
 			);
 			name = DATA;
+			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		81F911CD1E7B33AD0024CB4D /* IMAGES */ = {
@@ -222,6 +222,7 @@
 				81F911A11E7A108D0024CB4D /* Assets.xcassets */,
 			);
 			name = IMAGES;
+			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		81F911CE1E7B33B60024CB4D /* SUPPORT */ = {
@@ -231,6 +232,7 @@
 				81F911C81E7A11B00024CB4D /* GoogleService-Info.plist */,
 			);
 			name = SUPPORT;
+			path = FirebaseEmailLoginDemo;
 			sourceTree = "<group>";
 		};
 		99587B3CEA182BA510068AB7 /* Frameworks */ = {
@@ -551,13 +553,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */,
-				815851971E7B48B900A98EB2 /* MainViewController.swift in Sources */,
+				815851971E7B48B900A98EB2 /* NotesViewController.swift in Sources */,
 				815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */,
+				815851C01E7CFAC200A98EB2 /* HomeCollectionViewController.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
-				815851BE1E7CF84A00A98EB2 /* BookNotesController.swift in Sources */,
 				815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */,
-				815851AE1E7C6A9A00A98EB2 /* MyHomeViewController.swift in Sources */,
 				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
