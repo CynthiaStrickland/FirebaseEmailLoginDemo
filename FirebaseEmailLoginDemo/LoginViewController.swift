@@ -13,12 +13,11 @@ import FirebaseCore
 class LoginViewController: UIViewController {
     
     let loginButton = UIButton()
-    var loginButtonConstraints:[NSLayoutConstraint] = []
+    var buttonConstraints:[NSLayoutConstraint] = []
     
     @IBOutlet weak var forgotPassword: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-//    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     @IBOutlet weak var loginRegisterControl: UISegmentedControl!
@@ -35,14 +34,51 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         customButtons()
+        customLoginButton()
         
         if FIRAuth.auth()?.currentUser != nil {
             self.performSegue(withIdentifier: "tab", sender: self)
         }
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.emailTextField.resignFirstResponder()
+        self.passwordTextField.resignFirstResponder()
+        return true
+    }
     
+    func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
     
-    @IBAction func loginButtonPressed(_ sender: UIButton) {
+    func customLoginButton() {
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.layer.backgroundColor = buttonColor
+        loginButton.setTitle("LOGIN", for: .normal)
+        loginButton.setTitleColor(UIColor.white, for: .normal)
+        loginButton.titleLabel?.font = UIFont(name: "Calibri", size: 12)
+        loginButton.layer.borderColor = buttonBorder
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.cornerRadius = 10
+        
+        self.view.addSubview(loginButton)
+        
+        loginButton.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
+        
+        let loginButtonHeight = loginButton.heightAnchor.constraint(equalToConstant: 30)
+        let loginButtonWidth = loginButton.widthAnchor.constraint(equalToConstant: 130)
+        
+        let xPlacement = loginButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        let yPlacement = loginButton.topAnchor.constraint(equalTo: self.passwordTextField.bottomAnchor, constant: 60)
+        
+        buttonConstraints = [loginButtonHeight, loginButtonWidth, xPlacement, yPlacement]
+        NSLayoutConstraint.activate(buttonConstraints)
+        
+        loginAction()
+    }
+    
+    func loginAction() {
         if emailTextField != nil && passwordTextField != nil {
             
             if loginRegisterControl.selectedSegmentIndex == 0 {
@@ -72,51 +108,42 @@ class LoginViewController: UIViewController {
                 })
             }
         }
-    
+        
     }
+    
+    func constraints() {
+        let xPlacementLoginRegisterSegmentedControl = loginRegisterControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+        let yPlacementLoginRegisterSegmentedControl = loginRegisterControl.topAnchor.constraint(equalTo: self.view.topAnchor)
+        
+        
+        
+        buttonConstraints.append(xPlacementLoginRegisterSegmentedControl)
+        buttonConstraints.append(yPlacementLoginRegisterSegmentedControl)
+        
+        NSLayoutConstraint.activate(buttonConstraints)
+        
 
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.emailTextField.resignFirstResponder()
-        self.passwordTextField.resignFirstResponder()
-        return true
-    }
-    
-    func dismissKeyboard()
-    {
-        view.endEditing(true)
     }
     
     func customButtons() {
-        loginButton.translatesAutoresizingMaskIntoConstraints = false
-        loginButton.frame = CGRect(x: 127, y: 364, width: 114, height: 40)
-        loginButton.layer.backgroundColor = buttonColor
-        loginButton.setTitle("LOGIN", for: .normal)
-        loginButton.setTitleColor(UIColor.white, for: .normal)
-        loginButton.titleLabel?.font = UIFont(name: "Calibri", size: 12)
-        loginButton.layer.borderColor = buttonBorder
-        loginButton.layer.borderWidth = 1
-        loginButton.layer.cornerRadius = 10
-        
-        let topConstraint = loginButton.topAnchor.constraint(equalTo: self.view.topAnchor)
-        let bottomConstraint = loginButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-        let leftConstraint = loginButton.leadingAnchor.constraint(equalTo: self.view.leadingAnchor)
-        let rightConstraint = loginButton.rightAnchor.constraint(equalTo: self.view.rightAnchor)
-        
-        loginButtonConstraints = [topConstraint, bottomConstraint, leftConstraint, rightConstraint]
-        NSLayoutConstraint.activate(loginButtonConstraints)
-        
-        self.view.addSubview(loginButton)
-
         
         loginRegisterControl.layer.borderColor = buttonBorder
         loginRegisterControl.layer.backgroundColor  = buttonColor
-        loginRegisterControl.layer.borderWidth = 1
-        loginRegisterControl.layer.cornerRadius = 10
         
         forgotPassword.layer.borderColor = buttonBorder
         forgotPassword.layer.backgroundColor  = buttonColor
         forgotPassword.layer.borderWidth = 1
         forgotPassword.layer.cornerRadius = 10
+        
+        emailLabel.layer.borderColor = buttonBorder
+        emailLabel.layer.backgroundColor  = buttonColor
+        emailLabel.layer.borderWidth = 1
+        emailLabel.layer.cornerRadius = 7
+        
+        passwordLabel.layer.borderColor = buttonBorder
+        passwordLabel.layer.backgroundColor  = buttonColor
+        passwordLabel.layer.borderWidth = 1
+        passwordLabel.layer.cornerRadius = 7
     }
 }
 
