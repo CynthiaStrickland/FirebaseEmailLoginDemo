@@ -52,6 +52,8 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    //MARK:  LOGIN BUTTON PROGRAMATICALLY
+    
     func customLoginButton() {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.layer.backgroundColor = buttonColor
@@ -111,14 +113,22 @@ class LoginViewController: UIViewController {
         
     }
     
+    //MARK:  CONSTRAINTS
+    
     func constraints() {
+        loginRegisterControl.translatesAutoresizingMaskIntoConstraints = false
+        forgotPassword.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
         let xPlacementLoginRegisterSegmentedControl = loginRegisterControl.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-        let yPlacementLoginRegisterSegmentedControl = loginRegisterControl.topAnchor.constraint(equalTo: self.view.topAnchor)
-        
-        
-        
+
+        let xPlacementForgotPassword = forgotPassword.rightAnchor.constraint(equalTo: self.view.trailingAnchor)
+        let yPlacementForgotPassword = forgotPassword.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+
         buttonConstraints.append(xPlacementLoginRegisterSegmentedControl)
-        buttonConstraints.append(yPlacementLoginRegisterSegmentedControl)
+        buttonConstraints.append(xPlacementForgotPassword)
+        buttonConstraints.append(yPlacementForgotPassword)
         
         NSLayoutConstraint.activate(buttonConstraints)
         
