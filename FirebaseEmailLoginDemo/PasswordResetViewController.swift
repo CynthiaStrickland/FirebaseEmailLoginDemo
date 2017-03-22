@@ -55,7 +55,12 @@ class PasswordResetViewController: UIViewController {
         sendButton.layer.backgroundColor  = buttonColor
         sendButton.layer.borderWidth = 1
         sendButton.layer.cornerRadius = 10
-    }
+        
+        cancelButton.layer.borderColor = buttonBorder
+        cancelButton.layer.backgroundColor  = buttonColor
+        cancelButton.layer.borderWidth = 1
+        cancelButton.layer.cornerRadius = 10
+        }
     }
 
 

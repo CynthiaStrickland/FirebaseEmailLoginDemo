@@ -26,6 +26,16 @@ class HomeViewController: UIViewController {
         customButtons()
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.titleOfBook.resignFirstResponder()
+        self.authorOfBook.resignFirstResponder()
+        return true
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     func customButtons() {
         logoutButton.layer.borderColor = buttonBorder
         logoutButton.layer.backgroundColor  = buttonColor
