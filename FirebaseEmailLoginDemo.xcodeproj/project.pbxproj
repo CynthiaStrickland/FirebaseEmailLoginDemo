@@ -15,13 +15,12 @@
 		815851A21E7B791E00A98EB2 /* home30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A11E7B791E00A98EB2 /* home30.png */; };
 		815851A41E7B792700A98EB2 /* BC30.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A31E7B792700A98EB2 /* BC30.png */; };
 		815851A61E7B793D00A98EB2 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 815851A51E7B793D00A98EB2 /* me@2x.png */; };
-		815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */; };
 		815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B11E7CBB7E00A98EB2 /* BookData.swift */; };
 		815851B41E7CBE2100A98EB2 /* BookData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815851B31E7CBE2100A98EB2 /* BookData.plist */; };
 		815851B61E7CBEC600A98EB2 /* MobyDick.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */; };
 		815851B81E7CC18800A98EB2 /* atlas.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 815851B71E7CC18800A98EB2 /* atlas.jpeg */; };
-		815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851B91E7CC46C00A98EB2 /* BookCell.swift */; };
-		815851C01E7CFAC200A98EB2 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */; };
+		815851C01E7CFAC200A98EB2 /* BookCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851BF1E7CFAC200A98EB2 /* BookCollectionViewController.swift */; };
+		815852001E83244D00A98EB2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815851FF1E83244D00A98EB2 /* HomeViewController.swift */; };
 		81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119A1E7A108D0024CB4D /* AppDelegate.swift */; };
 		81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F9119C1E7A108D0024CB4D /* LoginViewController.swift */; };
 		81F911A01E7A108D0024CB4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F9119E1E7A108D0024CB4D /* Main.storyboard */; };
@@ -66,13 +65,12 @@
 		815851A11E7B791E00A98EB2 /* home30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home30.png; sourceTree = "<group>"; };
 		815851A31E7B792700A98EB2 /* BC30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BC30.png; sourceTree = "<group>"; };
 		815851A51E7B793D00A98EB2 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
-		815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLayout.swift; sourceTree = "<group>"; };
 		815851B11E7CBB7E00A98EB2 /* BookData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookData.swift; sourceTree = "<group>"; };
 		815851B31E7CBE2100A98EB2 /* BookData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BookData.plist; sourceTree = "<group>"; };
 		815851B51E7CBEC600A98EB2 /* MobyDick.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MobyDick.jpeg; sourceTree = "<group>"; };
 		815851B71E7CC18800A98EB2 /* atlas.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atlas.jpeg; sourceTree = "<group>"; };
-		815851B91E7CC46C00A98EB2 /* BookCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
-		815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		815851BF1E7CFAC200A98EB2 /* BookCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCollectionViewController.swift; sourceTree = "<group>"; };
+		815851FF1E83244D00A98EB2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81F911971E7A108D0024CB4D /* FirebaseEmailLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseEmailLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F9119A1E7A108D0024CB4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FirebaseEmailLoginDemo/AppDelegate.swift; sourceTree = "<group>"; };
 		81F9119C1E7A108D0024CB4D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = FirebaseEmailLoginDemo/LoginViewController.swift; sourceTree = "<group>"; };
@@ -181,9 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				815851961E7B48B900A98EB2 /* NotesViewController.swift */,
-				815851BF1E7CFAC200A98EB2 /* HomeCollectionViewController.swift */,
-				815851AF1E7CB9D800A98EB2 /* CollectionViewLayout.swift */,
-				815851B91E7CC46C00A98EB2 /* BookCell.swift */,
+				815851BF1E7CFAC200A98EB2 /* BookCollectionViewController.swift */,
+				815851FF1E83244D00A98EB2 /* HomeViewController.swift */,
 			);
 			name = CONTROLLER;
 			path = FirebaseEmailLoginDemo;
@@ -552,13 +549,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				815851B01E7CB9D800A98EB2 /* CollectionViewLayout.swift in Sources */,
 				815851971E7B48B900A98EB2 /* NotesViewController.swift in Sources */,
-				815851BA1E7CC46C00A98EB2 /* BookCell.swift in Sources */,
-				815851C01E7CFAC200A98EB2 /* HomeCollectionViewController.swift in Sources */,
+				815851C01E7CFAC200A98EB2 /* BookCollectionViewController.swift in Sources */,
 				81F9119D1E7A108D0024CB4D /* LoginViewController.swift in Sources */,
 				81F9119B1E7A108D0024CB4D /* AppDelegate.swift in Sources */,
 				815851B21E7CBB7E00A98EB2 /* BookData.swift in Sources */,
+				815852001E83244D00A98EB2 /* HomeViewController.swift in Sources */,
 				815851A01E7B746600A98EB2 /* PasswordResetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
