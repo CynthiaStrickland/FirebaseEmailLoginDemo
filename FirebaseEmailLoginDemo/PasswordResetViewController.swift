@@ -13,8 +13,14 @@ class PasswordResetViewController: UIViewController {
     let buttonBorder = UIColor.white.cgColor
     let buttonColor = UIColor(red: 40/255, green: 141/255, blue: 255/255, alpha: 0.5).cgColor
     
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var emailAddress: UITextField!
     @IBOutlet weak var sendButton: UIButton!
+    
+    @IBAction func cancelButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+
+    }
     
     @IBAction func changePasswordPressed(_ sender: AnyObject) {
         let userInput = emailAddress.text
@@ -28,10 +34,6 @@ class PasswordResetViewController: UIViewController {
         } else {
             
         }
-    }
-    
-    @IBAction func doneButtonPressed(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
