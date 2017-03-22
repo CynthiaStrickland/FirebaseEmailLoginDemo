@@ -496,6 +496,9 @@
                                                 <state key="normal" title="Click to Add Photo of Book Cover">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="bookCoverImage:" destination="yLc-ZY-DgK" eventType="touchUpInside" id="dfX-S3-Xm7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -529,6 +532,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="logout:" destination="Gqc-C9-kba" eventType="touchUpInside" id="ix6-zG-nCh"/>
+                                                    <action selector="logoutPressed:" destination="yLc-ZY-DgK" eventType="touchUpInside" id="rN6-zM-XdR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKi-bb-7cs" userLabel="saveButton">
@@ -539,6 +543,9 @@
                                                 <state key="normal" title="SAVE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="saveButtonPressed:" destination="yLc-ZY-DgK" eventType="touchUpInside" id="ls4-63-pmQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -571,6 +578,7 @@
                     <tabBarItem key="tabBarItem" title="HOME" image="home30.png" selectedImage="home30.png" id="rED-xT-iPy"/>
                     <connections>
                         <outlet property="authorOfBook" destination="VQa-wq-cSL" id="5RG-dr-xxe"/>
+                        <outlet property="bookCoverImage" destination="dxC-N5-SQW" id="F4H-d1-3ah"/>
                         <outlet property="logoutButton" destination="h7A-MC-GkN" id="vIR-5E-UxX"/>
                         <outlet property="profileName" destination="NDg-EX-0n0" id="Ejm-lo-RnJ"/>
                         <outlet property="saveButton" destination="RKi-bb-7cs" id="xrv-Ta-B1i"/>
