@@ -8,8 +8,10 @@
 
 import UIKit
 import FirebaseAuth
+import MobileCoreServices
 
-class HomeViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+class HomeViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var profileName: UITextField!
     @IBOutlet weak var authorOfBook: UITextField!
@@ -51,13 +53,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
-//        
-//        if imagePicked == 1 {
-//            profileImage.image = pickedImage
-//        } else if imagePicked == 0 {
-//            addBookReadImageView.image = pickedImage
-//        }
-//        
+
         if let selectedImage = pickedImage {
             bookCoverImage.image = selectedImage
             
@@ -75,10 +71,116 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         }
     }
     
+class Camera {
+        
+        var delegate: (UINavigationControllerDelegate & UIImagePickerControllerDelegate)?
+        
+        init(delegate_: UINavigationControllerDelegate & UIImagePickerControllerDelegate) {
+            delegate = delegate_
+        }
+        
+        func presentPhotoLibrary(target: UIViewController, canEdit: Bool) {
+            
+            if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) && !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.savedPhotosAlbum) {
+                
+                return
+            }
+            
+            let type = kUTTypeImage as String
+            let imagePicker = UIImagePickerController()
+            
+            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+                
+                imagePicker.sourceType = .photoLibrary
+                
+                if let availableTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary) {
+                    
+                    if (availableTypes as NSArray).contains(type) {
+                        
+                        imagePicker.mediaTypes = [type]
+                        imagePicker.allowsEditing = canEdit
+                    }
+                }
+            } else if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum) {
+                
+                imagePicker.sourceType = .savedPhotosAlbum
+                
+                if let availableTypes = UIImagePickerController.availableMediaTypes(for: .savedPhotosAlbum) {
+                    
+                    if (availableTypes as NSArray).contains(type) {
+                        
+                        imagePicker.mediaTypes = [type]
+                    }
+                    
+                }
+            } else {
+                
+                return
+            }
+            
+            imagePicker.allowsEditing = canEdit
+            imagePicker.delegate = delegate
+            target.present(imagePicker, animated: true, completion: nil)
+        }
+        
+        func presentPhotoCamera(target: UIViewController, canEdit: Bool) {
+            
+            if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+                
+                return
+            }
+            
+            let type1 = kUTTypeImage as String
+            let imagePicker = UIImagePickerController()
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                
+                if let availableTypes = UIImagePickerController.availableMediaTypes(for: .camera) {
+                    
+                    if (availableTypes as NSArray).contains(type1) {
+                        
+                        imagePicker.mediaTypes = [type1]
+                        imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+                    }
+                }
+                
+                if UIImagePickerController.isCameraDeviceAvailable(.rear) {
+                    
+                    imagePicker.cameraDevice = UIImagePickerControllerCameraDevice.rear
+                    
+                } else if UIImagePickerController.isCameraDeviceAvailable(.front) {
+                    
+                    imagePicker.cameraDevice = UIImagePickerControllerCameraDevice.front
+                }
+                
+            } else {
+                
+                return
+            }
+            
+            imagePicker.allowsEditing = canEdit
+            imagePicker.showsCameraControls = true
+            imagePicker.delegate = delegate
+            target.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        let image = info[UIImagePickerControllerEditedImage] as! UIImage
+        
+        // what to do with your image?
+        
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK:  LOGOUT
+    
     @IBAction func logoutPressed(_ sender: Any) {
         try! FIRAuth.auth()?.signOut()
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func saveButtonPressed(_ sender: Any) {
     }
     
@@ -105,14 +207,33 @@ class HomeViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         saveButton.layer.borderWidth = 1
         saveButton.layer.cornerRadius = 10
     }
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension HomeViewController : UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    
+    func optionsMenu() {
+        
+        let camera = Camera(delegate_: self)
+        
+        let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        optionMenu.popoverPresentationController?.sourceView = self.view
+        
+        let takePhoto = UIAlertAction(title: "Camera", style: .default) { (alert : UIAlertAction!) in
+            camera.presentPhotoCamera(target: self, canEdit: true)
+        }
+        let sharePhoto = UIAlertAction(title: "Library", style: .default) { (alert : UIAlertAction) in
+            camera.presentPhotoLibrary(target: self, canEdit: true)
+        }
+        
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (alert : UIAlertAction) in
+            //
+        }
+        
+        optionMenu.addAction(takePhoto)
+        optionMenu.addAction(sharePhoto)
+        
+        optionMenu.addAction(cancel)
+        
+        self.present(optionMenu, animated: true, completion: nil)
     }
-    */
-
 }
